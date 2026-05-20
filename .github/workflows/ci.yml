@@ -18,8 +18,10 @@ jobs:
           java-version: 11
 
       - name: Build with Gradle
+        working-directory: ./
         run: |
           chmod +x gradlew
           ./gradlew build -x test
       - name: Run tests
+        working-directory: ./
         run: ./gradlew test
