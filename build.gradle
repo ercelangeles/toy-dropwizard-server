@@ -35,7 +35,7 @@ shadowJar {
     manifest {
         attributes 'Main-Class': mainClassName
     }
-    archiveFileName rootProject.name + '-' + rootProject.version + '.jar'
+    archiveFileName = rootProject.name + '-' + rootProject.version + '.jar'
 }
 
 run {
