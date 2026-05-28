@@ -47,5 +47,5 @@ jobs:
         run: pytest 
       - name: Bring server down 
         working-directory: 
-        run: docker-compose down 
+        run: docker compose down 
 
